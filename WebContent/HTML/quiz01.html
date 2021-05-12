@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- form 태그 안에 테이블을 넣고 입력 양식을 이용해서 예시 화면 작성 -->
+	<h3>Emp 정보</h3>
+	<form>
+		<table = border="1">
+		<tr>
+		<td>사원번호:</td> 
+		<td><input type="text" size="15" name="emp_no"></td>
+		</tr>
+	    <!-- 인풋 태그도 식별 하기 위해서 name 속성 지정 -->				 
+		<tr>
+		<td>이름:</td> 
+		<td><input type="text" size="15" name="name"></td>
+		</tr>		 
+
+	    <tr>
+		<td>성별:</td>
+		<td>
+			<input type="radio" name="gender">남자
+			<input type="radio" name="gender">여자
+		</td>
+		</tr>		 
+		
+		<tr>
+		<td>직업:</td> 
+		<td><input type="text" size="15" name="job"></td>
+		</tr>
+		
+		<tr>
+		<td>상사:</td>
+		<td>
+		<select name="manager">
+			<option>123</option>
+			<option>456</option>
+			<option>789</option>
+	    </select>
+		</td>
+		</tr>		 
+		
+		<tr>
+		<td>입사일:</td> 
+		<td><input type="text" size="15" name="hire_date" placeholder="YY-MM-DD"></td>
+		</tr>
+		
+		<tr>
+		<td>급여:</td>
+		<td><input type="text" size="15" name="salary"></td>
+		</tr>
+		
+				
+		<tr>
+		<td>커미션:</td>
+		<td><input type="text" size="15" name="commission"></td>
+		</tr>
+		
+		<tr>
+		<td>부서번호:</td>
+		<td>
+		<select name="dep_no">
+			<option>10 ACCOUNTING NEWYORK</option>
+			<option></option>
+			<option></option>
+	    </select>
+	    </td>
+		</tr>	
+			
+		<tr>
+	   	<td colspan="2" align="center">
+		   	<input type="submit" value="저장">
+		   	<input type="reset" value="취소">
+	   	</td>
+	   	</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- form 태그는 사용자가 입력한 값을 그대로 받아서 서버에 전송할 때 사용합니다 -->
+	<form>
+		<h4>회원가입 양식</h4>
+		아이디: <input type ="text" size="8" placeholder="8글자"><br/>
+	        비밀번호: <input type ="password" size="10"><br/>
+	        이메일: <input type ="email" size="10"><br/>
+	        관심분야: 
+	    <input type="checkbox" name="inter">JAVA
+	    <input type="checkbox" name="inter">JSP
+	    <input type="checkbox" name="inter">JS
+	    <input type="checkbox" name="inter">CSS
+	    <input type="checkbox" name="inter">DB
+	    <br>
+	   	전공:
+	    <input type="radio" name="major">경영학
+	    <input type="radio" name="major">전산학
+	   	<input type="radio" name="major">컴퓨터공학
+	   	<input type="radio" name="major">기계학
+	   	<input type="radio" name="major">수학   
+	   	<br/> 
+	   	지역:
+	   	<select name="region">
+	   		<option>서울</option>
+	   		<option>경기</option>
+	   		<option>인천</option>
+	   		<option>부산</option>
+	   	</select>
+	   	<br/>
+	   	자기소개:<br/>
+	   	<textarea rows="5" cols="30"></textarea>
+	   	<br/>
+	   	<input type="submit" value="가입">
+	   	<input type="reset" value="초기화">
+	   	<input button="button" value="목록">
+	</form>
+	   	
+		<!-- 1. [Tag]type: = 인풋속성(버튼,리셋, 서브밋, 텍스트, 비밀번호, 이메일, 체크박스...) 
+		          버튼 = 아무기능 없음
+		          리셋 = 초기화 기능
+		          서브밋 = 인풋박스 내용 전송 기능
+		     2. [Atr]placeholder: 인풋 박스 안에 주석 처럼 알려줄 수 있는 기능 
+		     3. [Tag]br: 줄바꿈
+		     4. [Atr] name: checkboc, radio속성은 반드시 name 속성을
+		          통일시킨다(name은 결국 거의 모든 태그에 필요하고 보통 db의 컬럼명이 들어감 결국)
+		     checkbox는 다중선택,
+		     radio는 name을 통해 하나의 그룹으로 묶어야 1개 선택 가능.
+		          안묶으면 전부 클릭 가능.
+		     5. [Tag]select: 선택할 수 있는 리스트 아래로 생성
+		     6. [Tag]option: select안의 리스트 항목 지정 
+		     7. [Tag]textarea: 장문의 입력창
+		     8. [Atr]rows, cols: 박스 세로길이, 가로길이
+		     9. [Atr]value : 타입버튼 글자(내용) 설정
+		       	-->
+		     
+	</form>
+
+</body>
+</html>
